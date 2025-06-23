@@ -59,13 +59,50 @@ Pour autoriser Bareos à communiquer avec ses clients sur le réseau local via n
    - Port 9103 TCP : bareos-sd   
 # Exercice 1 : Manipulations pratiques sur VM Windows # 
 Q.1.1.1 Créer l'utilisateur Lionel Lemarchand avec les même attribut de société que Kelly Rhameur.  
+![Capture d’écran de la création de l'utilisateur lionel](https://github.com/user-attachments/assets/d0dcec85-53ab-47e0-ad29-4206ea11f7f6)
+
+![Capture d’écran de la suite](https://github.com/user-attachments/assets/11db54d6-ade9-4cb8-b066-c7b55017f5d1)
 
 
-![Capture d’écran de l'utilisateur_lionel](https://github.com/user-attachments/assets/6ab9bafa-491f-4600-afaf-810d4e30ae22)
 
 Q.1.1.2 Créer une OU DeactivatedUsers et déplace le compte désactivé de Kelly Rhameur dedans.    
 
-![Capture d’écran de kelly](https://github.com/user-attachments/assets/a29c3525-ee91-4738-aff4-c41235fe0530)  
-Q.1.1.3 Modifier le groupe de l'OU dans laquelle était Kelly Rhameur en conséquence.  
+Trouve l’utilisateur Kelly Rhameur  
+
+Clique droit sur son nom → Désactiver le compte   
+ Déplacer Kelly vers "DeactivatedUsers"  
+
+ Clique droit sur Kelly Rhameur → Déplacer  
+
+Sélectionne l’OU DeactivatedUsers  
+
+ Clique sur OK  
+ ![Capture d’écran de la deactivation de Kelly Rhameur](https://github.com/user-attachments/assets/31c31ca5-7b6e-4af1-9ca7-04ccbca02fe9)
+
+
+Q.1.1.3 Modifier le groupe de l'OU dans laquelle était Kelly Rhameur en conséquence.    
+
+![Capture d’écran de la modification de OU](https://github.com/user-attachments/assets/6bc50011-4345-49d4-a85d-c42a18b06d27)  
+
+
+![Capture d’écran suite](https://github.com/user-attachments/assets/e7cb8e42-3c84-4d94-ae19-4f96e9c38d04)  
+
+# Partie 2 : Restriction utilisateurs  
+
+Q.1.2.1 Faire en sorte que l'utilisateur Gabriel Ghul ne puisse se connecter que du lundi au vendredi, de 7h à 17h.  
+![Capture d’écran du temps de connexion de Gabriel](https://github.com/user-attachments/assets/d96a4e77-146a-4ba3-8b76-a917cc03cfec)  
+
+Q.1.2.2 De même, bloquer sa connexion au seul ordinateur CLIENT01.  
+
+![Capture d’écran de la connexion du client01](https://github.com/user-attachments/assets/64c1796e-bfd3-442a-8e7a-5f8f135b0dda)  
+
+
+![Capture d’écran suit](https://github.com/user-attachments/assets/5153422d-6c20-48f2-85e2-caa18cc37c38)  
+
+Q.1.2.3 Mettre en place une stratégie de mot de passe pour durcir les comptes des utilisateurs de l'OU LabUsers.  
+
+# Partie 3 : Lecteurs réseaux  
+Q.1.3.1 Créer une GPO Drive-Mount qui monte les lecteurs E: et F: sur les clients.  
+
 
 
